@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
 
     salt.seed_master = {minion: salt.minion_pub}
 
-    # salt.run_highstate = true
+    salt.run_highstate = true
 
     salt.verbose = true
     salt.bootstrap_options = "-F -c /tmp/"
