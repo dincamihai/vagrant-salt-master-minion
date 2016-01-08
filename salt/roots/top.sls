@@ -1,4 +1,0 @@
-base:
-  'minion':
-    - vim
-    - pip

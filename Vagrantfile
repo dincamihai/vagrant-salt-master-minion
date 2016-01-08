@@ -1,10 +1,9 @@
 Vagrant.configure("2") do |config|
   ## Choose your base box
-  config.vm.box = "hashicorp/precise64"
+  config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "salt"
 
-  ## For masterless, mount your salt file root
-  config.vm.synced_folder "salt/roots/", "/srv/salt/"
+  # config.vm.synced_folder "salt/roots/", "/srv/salt/"
   # config.vm.synced_folder "salt/master/master.d/", "/etc/salt/master.d"
   # config.vm.synced_folder "salt/minion/minion.d/", "/etc/salt/minion.d"
 
