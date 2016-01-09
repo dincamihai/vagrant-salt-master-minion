@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "salt"
 
-  # config.vm.synced_folder "salt/roots/", "/srv/salt/"
+  config.vm.synced_folder "salt/roots/", "/srv/salt/"
   # config.vm.synced_folder "salt/master/master.d/", "/etc/salt/master.d"
   # config.vm.synced_folder "salt/minion/minion.d/", "/etc/salt/minion.d"
 
